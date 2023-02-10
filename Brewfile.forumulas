@@ -16,7 +16,7 @@ brew "chrome-cli"
 brew "consul"
 brew "coreutils"
 brew "curl"
-brew "devproductivity/devx-cli/devx-cli", link: false
+brew "devproductivity/devx-cli/devx-cli"
 brew "direnv"
 brew "dos2unix"
 brew "duf"
