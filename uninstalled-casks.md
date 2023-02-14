@@ -3,7 +3,6 @@
 brew "1bartender"
 brew "gettext"
 brew "kubectl"
-brew "pandoc"
 brew "rubberband"
 brew "typora"
 brew "w3m"
