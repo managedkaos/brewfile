@@ -2,7 +2,6 @@
 ```
 brew "1bartender"
 brew "gettext"
-brew "kubectl"
 brew "rubberband"
 brew "typora"
 brew "w3m"
