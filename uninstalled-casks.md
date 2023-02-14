@@ -1,19 +1,13 @@
 # Uninstalled Casks
 ```
+brew "1bartender"
 brew "gettext"
-brew "lame"
-brew "libffi"
-brew "nmap"
-brew "p11-kit"
+brew "kubectl"
 brew "pandoc"
-brew "ripgrep"
 brew "rubberband"
-brew "tig"
+brew "typora"
 brew "w3m"
 brew "xwmx/taps/nb"
-brew 1bartender
-brew kubectl
-brew typora
 cask "amazon-workspaces"
 cask "anaconda"
 cask "apache-directory-studio"
