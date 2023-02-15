@@ -1,6 +1,7 @@
 cask "adobe-connect"
 cask "amazon-chime"
 cask "android-file-transfer"
+cask "arc"
 cask "atom"
 cask "box-drive"
 cask "brave-browser"
