@@ -47,11 +47,13 @@ brew "gofireflyio/aiac/aiac"
 brew "gokey"
 brew "golangci-lint"
 brew "gomplate"
+brew "graphviz"
 brew "groovy"
 brew "harfbuzz"
 brew "helm"
 brew "httpie"
 brew "infracost"
+brew "inframap"
 brew "jakehilborn/jakehilborn/displayplacer"
 brew "jenkins", restart_service: true
 brew "jpeg", link: true

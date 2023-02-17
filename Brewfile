@@ -77,11 +77,13 @@ brew "go"
 brew "gokey"
 brew "golangci-lint"
 brew "gomplate"
+brew "graphviz"
 brew "openjdk"
 brew "groovy"
 brew "helm"
 brew "httpie"
 brew "infracost"
+brew "inframap"
 brew "jenkins", restart_service: true
 brew "jpeg", link: true
 brew "jq"
