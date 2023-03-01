@@ -115,7 +115,7 @@ brew "parallel"
 brew "pianobar"
 brew "pip-completion"
 brew "postgresql@14"
-brew "virtualenv"
+brew "virtualenv", link: false
 brew "pre-commit"
 brew "pulumi"
 brew "pv"
