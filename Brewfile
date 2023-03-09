@@ -159,7 +159,7 @@ brew "zlib"
 brew "aws/tap/copilot-cli"
 brew "bridgecrewio/tap/yor"
 brew "c-bata/kube-prompt/kube-prompt"
-brew "devproductivity/devx-cli/devx-cli", link: false
+brew "devproductivity/devx-cli/devx-cli"
 brew "gofireflyio/aiac/aiac"
 brew "jakehilborn/jakehilborn/displayplacer"
 brew "lucagrulla/tap/cw"
