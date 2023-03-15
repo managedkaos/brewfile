@@ -126,7 +126,7 @@ brew "tmux"
 brew "tree"
 brew "turbot/tap/steampipe"
 brew "vim"
-brew "virtualenv", link: false
+brew "virtualenv"
 brew "warrensbox/tap/tfswitch"
 brew "watson"
 brew "weaveworks/tap/eksctl"
