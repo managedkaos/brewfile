@@ -19,7 +19,7 @@ brew "consul"
 brew "coreutils"
 brew "curl"
 brew "detox"
-brew "devproductivity/devx-cli/devx-cli", link: false
+brew "devproductivity/devx-cli/devx-cli"
 brew "direnv"
 brew "dos2unix"
 brew "dotnet"
