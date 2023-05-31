@@ -61,7 +61,7 @@ brew "infracost"
 brew "inframap"
 brew "jakehilborn/jakehilborn/displayplacer"
 brew "jbangdev/tap/jbang"
-brew "jenkins"
+brew "jenkins", restart_service: true
 brew "jpeg", link: true
 brew "jq"
 brew "jrnl"
