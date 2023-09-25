@@ -8,7 +8,6 @@ tap "devproductivity/devx-cli", "git@github.prod.hulu.com:devproductivity/homebr
 tap "gofireflyio/aiac"
 tap "heartexlabs/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "jakehilborn/jakehilborn"
