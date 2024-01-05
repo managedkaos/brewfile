@@ -1,8 +1,12 @@
+outdated:
+	brew outdated --greedy
+
 check-uninstalled:
 	./scripts/check-uninstalled.sh
 
 upgradecasks:
-	./scripts/brew-cask-upgrade.sh
+	brew upgrade --cask --greedy
+	#./scripts/brew-cask-upgrade.sh
 
 strata:
 	grep -E "^brew" ./Brewfile | sort > ./Brewfile.formulas

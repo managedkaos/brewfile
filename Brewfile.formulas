@@ -110,7 +110,7 @@ brew "python-filelock"
 brew "python-platformdirs"
 brew "python-tk@3.10"
 brew "python@3.10"
-brew "python@3.11", link: false
+brew "python@3.11"
 brew "python@3.12"
 brew "readline"
 brew "rename"
