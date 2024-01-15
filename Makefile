@@ -1,3 +1,9 @@
+default:
+	@echo "make [hello|outdated|check-uninstalled|upgradecasks|strata]"
+
+hello:
+	hello
+
 outdated:
 	brew outdated --greedy
 
