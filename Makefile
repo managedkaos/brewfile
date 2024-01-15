@@ -1,8 +1,5 @@
 default:
-	@echo "make [hello|outdated|check-uninstalled|upgradecasks|strata]"
-
-hello:
-	hello
+	@echo "make [outdated|check-uninstalled|upgradecasks|strata]"
 
 outdated:
 	brew outdated --greedy
