@@ -1,6 +1,7 @@
 tap "aws/tap"
 tap "bridgecrewio/tap"
 tap "c-bata/kube-prompt"
+tap "charmbracelet/tap"
 tap "chef/chef"
 tap "codeship/taps"
 tap "dart-lang/dart"
