@@ -1,5 +1,11 @@
 outdated:
-	brew outdated --greedy
+	@echo "Outdated formulas and casks:"
+	@brew outdated --greedy --verbose \
+		| sort \
+		| tr -d '()' \
+		| sed -r 's/, +/,/g' \
+		| column -t
+
 
 check-uninstalled:
 	./scripts/check-uninstalled.sh
