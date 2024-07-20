@@ -18,6 +18,7 @@ casks:
 	#./scripts/brew-cask-upgrade.sh
 
 strata:
+	brew bundle dump --force --file=./Brewfile
 	grep -E "^brew" ./Brewfile | sort > ./Brewfile.formulas
 	grep -E "^tap"  ./Brewfile | sort > ./Brewfile.taps
 	grep -E "^cask" ./Brewfile | sort > ./Brewfile.casks
