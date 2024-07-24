@@ -24,18 +24,24 @@ strata:
 	grep -E "^cask" ./Brewfile | sort > ./Brewfile.casks
 	grep -E "^vsco" ./Brewfile | sort > ./Brewfile.vscode
 
+backups:
+	./scripts/backup_chrome_profiles.sh
+	./scripts/backup_bash.sh
+	./scripts/backup_node_packages.sh
+	./scripts/backup_dotfiles.sh
+	./scripts/backup_zoom_chats.sh
 all:
 	brew update
 	$(MAKE) check-uninstalled
 	$(MAKE) outdated
 	$(MAKE) upgrade
 	$(MAKE) casks
-	-brew cleanup
-	-brew doctor
 	$(MAKE) strata
+	$(MAKE) backups
 	npm update -g
 	tldr --update
-	./scripts/backup_chrome_profiles.sh
-	./scripts/backup_bash.sh
-	./scripts/backup_node_packages.sh
-	./scripts/backup_dotfiles.sh
+	-brew cleanup
+	-brew doctor
+
+.PHONY: outdated check-uninstalled upgrade casks strata all
+
