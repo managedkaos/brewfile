@@ -124,7 +124,7 @@ brew "rename"
 brew "ripgrep"
 brew "ruby"
 brew "ruff"
-brew "rustup-init", link: true
+brew "rustup"
 brew "sbt"
 brew "sc-im"
 brew "scala"
