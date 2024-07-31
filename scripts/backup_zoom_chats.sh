@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This script will backup all Zoom chat files to a specified directory.
-git -C /Users/Michael.Jenkins/Documents/Zoom commit -am "Backup Zoom chats"
-git -C /Users/Michael.Jenkins/Documents/Zoom push origin main
+git -C ~/Documents/Zoom add .
+git -C ~/Documents/Zoom commit -m "Backup Zoom chats"
+git -C ~/Documents/Zoom push origin main
 
