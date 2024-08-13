@@ -6,7 +6,6 @@ outdated:
 		| sed -r 's/, +/,/g' \
 		| column -t
 
-
 check-uninstalled:
 	./scripts/check-uninstalled.sh
 
@@ -31,6 +30,14 @@ backups:
 	./scripts/backup_node_packages.sh
 	./scripts/backup_dotfiles.sh
 	./scripts/backup_zoom_chats.sh
+	$(MAKE) -C ~
+
+DOCKER_TARGETS := image container network volume
+prune: $(patsubst %,prune-%, $(DOCKER_TARGETS))
+
+prune-%:
+	docker $* prune --force
+
 all:
 	brew update
 	$(MAKE) check-uninstalled
