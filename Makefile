@@ -14,7 +14,6 @@ upgrade:
 
 casks:
 	brew upgrade --cask --greedy
-	#./scripts/brew-cask-upgrade.sh
 
 strata:
 	brew bundle dump --force
