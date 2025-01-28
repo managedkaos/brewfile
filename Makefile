@@ -41,10 +41,9 @@ all:
 	brew update
 	$(MAKE) check-uninstalled
 	$(MAKE) outdated
-	$(MAKE) upgrade
+	-$(MAKE) upgrade
 	$(MAKE) casks
 	$(MAKE) strata
-	$(MAKE) backups
 	npm update -g
 	tldr --update
 	-brew cleanup
