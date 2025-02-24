@@ -29,7 +29,7 @@ backups:
 	./scripts/backup_node_packages.sh
 	./scripts/backup_dotfiles.sh
 	./scripts/backup_zoom_chats.sh
-	$(MAKE) -C ~
+	./scripts/mac-backup.sh ./scripts/backup-targets.txt
 
 DOCKER_TARGETS := image container network volume
 prune: $(patsubst %,prune-%, $(DOCKER_TARGETS))
