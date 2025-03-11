@@ -14,7 +14,7 @@ while IFS= read -r line; do
     if [ ! -z "$line" ]; then
         if [ -e "$line" ]; then
             echo "Backing up: $line"
-            rsync -ravzLK --progress --exclude="Workspace/Go" "$line" "$backup_dir/"
+            rsync -ravzLK --progress --exclude="node_modules/" --exclude="Workspace/Go" "$line" "$backup_dir/"
         else
             echo "Skipping missing file: $line"
         fi
