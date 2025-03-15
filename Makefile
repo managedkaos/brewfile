@@ -44,7 +44,8 @@ all:
 	-$(MAKE) upgrade
 	$(MAKE) casks
 	$(MAKE) strata
-	npm update -g
+	brew link --overwrite node
+	/opt/homebrew/bin/npm update -g
 	tldr --update
 	-brew cleanup
 	-brew doctor
