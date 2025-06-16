@@ -25,11 +25,11 @@ strata:
 
 backups:
 	time (./scripts/backup_chrome_profiles.sh && \
-	./scripts/backup_bash.sh && \
 	./scripts/backup_node_packages.sh && \
 	./scripts/backup_dotfiles.sh && \
 	./scripts/backup_zoom_chats.sh && \
 	./scripts/mac-backup.sh ./scripts/backup-targets.txt)
+	#./scripts/backup_bash.sh && \
 
 DOCKER_TARGETS := image container network volume
 prune: $(patsubst %,prune-%, $(DOCKER_TARGETS))
