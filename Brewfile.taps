@@ -1,7 +1,4 @@
-tap "aws/tap"
-tap "bridgecrewio/tap"
 tap "c-bata/kube-prompt"
-tap "chef/chef"
 tap "dart-lang/dart"
 tap "gofireflyio/aiac"
 tap "heartexlabs/tap"
