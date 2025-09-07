@@ -109,7 +109,7 @@ brew "neovim"
 brew "netlify-cli"
 brew "nim"
 brew "nmap"
-brew "node"
+brew "node", link: false
 brew "nushell"
 brew "nvm"
 brew "ollama", restart_service: :changed
