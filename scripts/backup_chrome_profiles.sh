@@ -2,11 +2,14 @@
 
 function ,chromels() {
     rm ~/Dotfiles/chrome-profiles.txt
-    for i in ~/Library/Application\ Support/Google/Chrome/Profile*;
+    for profile in ~/Library/Application\ Support/Google/Chrome/Profile*;
     do
-        echo "$i";
-        jq '.account_info[] | "\(.email) \(.full_name)"' < "${i}/Preferences" | \
-            tee -a ~/Dotfiles/chrome-profiles.txt
+        email_address=$(
+            jq -r '.account_info[0].email' < "${profile}/Preferences"
+        )
+
+        printf "%-35s %s\n" "${email_address}" "\"${profile}\"" \
+            | tee -a ~/Dotfiles/chrome-profiles.txt
     done
 }
 
