@@ -9,6 +9,9 @@ outdated:
 check-uninstalled:
 	./scripts/check-uninstalled.sh
 
+update:
+	brew update
+
 upgrade:
 	brew upgrade
 
@@ -37,6 +40,7 @@ prune: $(patsubst %,prune-%, $(DOCKER_TARGETS))
 prune-%:
 	docker $* prune --force
 
+nocask: update upgrade
 all:
 	brew update
 	$(MAKE) check-uninstalled
