@@ -27,7 +27,7 @@
 /Users/Michael.Jenkins/.zshrc
 /Users/Michael.Jenkins/Desktop
 /Users/Michael.Jenkins/Documents
-/Users/Michael.Jenkins/Google_Drive
+#/Users/Michael.Jenkins/Google_Drive
 /Users/Michael.Jenkins/Movies
 /Users/Michael.Jenkins/Music
 /Users/Michael.Jenkins/OneDrive-DisneyStreaming
