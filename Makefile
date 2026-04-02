@@ -34,6 +34,9 @@ backups:
 	./scripts/mac-backup.sh ./scripts/backup-targets.txt)
 	#./scripts/backup_bash.sh && \
 
+npm:
+	/opt/homebrew/bin/npm update -g
+
 DOCKER_TARGETS := image container network volume
 prune: $(patsubst %,prune-%, $(DOCKER_TARGETS))
 
@@ -41,6 +44,7 @@ prune-%:
 	docker $* prune --force
 
 nocask: update upgrade
+
 all:
 	brew update
 	$(MAKE) check-uninstalled
@@ -49,7 +53,6 @@ all:
 	$(MAKE) casks
 	$(MAKE) strata
 	brew link --overwrite node
-	/opt/homebrew/bin/npm update -g
 	tldr --update
 	-brew cleanup
 	-brew doctor
