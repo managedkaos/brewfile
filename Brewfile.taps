@@ -1,6 +1,7 @@
 tap "atlassian/acli"
 tap "c-bata/kube-prompt"
 tap "dart-lang/dart"
+tap "furtidev/pub"
 tap "gofireflyio/aiac"
 tap "heartexlabs/tap"
 tap "humansignal/tap"
