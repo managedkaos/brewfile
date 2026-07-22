@@ -1,18 +1,17 @@
-tap "atlassian/acli"
-tap "c-bata/kube-prompt"
-tap "dart-lang/dart"
-tap "furtidev/pub"
-tap "gofireflyio/aiac"
-tap "heartexlabs/tap"
-tap "humansignal/tap"
-tap "jenkins-x/jx"
-tap "lucagrulla/tap"
-tap "microsoft/git"
-tap "microsoft/mssql-release"
-tap "mongodb/brew"
-tap "oven-sh/bun"
-tap "warrensbox/tap"
-tap "zurawiki/brews"
+tap "atlassian/acli", trusted: true
+tap "c-bata/kube-prompt", trusted: true
+tap "dart-lang/dart", trusted: true
+tap "furtidev/pub", trusted: true
+tap "gofireflyio/aiac", trusted: true
+tap "humansignal/tap", trusted: true
+tap "jenkins-x/jx", trusted: true
+tap "lucagrulla/tap", trusted: true
+tap "microsoft/git", trusted: true
+tap "microsoft/mssql-release", trusted: true
+tap "mongodb/brew", trusted: true
+tap "oven-sh/bun", trusted: true
+tap "warrensbox/tap", trusted: true
+tap "zurawiki/brews", trusted: true
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Run your GitHub Actions locally
@@ -59,8 +58,6 @@ brew "bash-git-prompt"
 brew "bash-preexec"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Bash Automated Testing System
 brew "bats-core"
 # Parser generator
@@ -81,6 +78,8 @@ brew "checkmake"
 brew "chrome-cli"
 # Ruby environment tool
 brew "chruby"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Command-line csv viewer
 brew "csvlens"
 # Open source multi-tool for exploring and publishing data
@@ -263,8 +262,6 @@ brew "mp3blaster"
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
-# General-purpose lossless data-compression library
-brew "zlib"
 # Open source relational database management system
 brew "mysql-client"
 # Port scanning utility for large networks
@@ -419,10 +416,26 @@ brew "yor"
 brew "yq"
 # Tracks most-used directories to make cd smarter
 brew "z"
+# General-purpose lossless data-compression library
+brew "zlib"
 # Tabular data swiss-army knife CLI
 brew "zsv"
+# Software to interact with Atlassian Cloud from the terminal
+brew "atlassian/acli/acli"
+# An interactive kubernetes client featuring auto-complete using go-prompt.
+brew "c-bata/kube-prompt/kube-prompt"
+# Look for issues inside SubRip text (.srt) files
+brew "furtidev/pub/srt-linter"
+# Artificial Intelligence Infrastructure-as-Code Generator
+brew "gofireflyio/aiac/aiac"
+# The best way to tail AWS Cloudwatch Logs from your terminal
+brew "lucagrulla/tap/cw"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # The tfswitch command lets you switch between terraform versions.
 brew "warrensbox/tap/tfswitch"
+# Git prepare-commit-msg hook for authoring commit messages with GPT-3
+brew "zurawiki/brews/gptcommit"
 # Slideshow maker
 cask "4k-slideshow-maker"
 # Transfer files from and to an Android smartphone
@@ -439,13 +452,11 @@ cask "balenaetcher"
 cask "basictex"
 # Text, code, and markup editor
 cask "bbedit"
-# Open-source code editor for web-developement
 cask "brackets"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Budgeting tool
 cask "buckets"
-# Use a Canon camera as a webcam
 cask "canon-eos-webcam-utility"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
@@ -455,14 +466,10 @@ cask "copilot-cli"
 cask "crystalfetch"
 # Server and cloud storage browser
 cask "cyberduck"
-# VPN client
-cask "cyberghost-vpn"
 # Databases and SQL IDE
 cask "datagrip"
 # Universal database tool and SQL client
 cask "dbeaver-community"
-# Agentic IDE with AI agent command center
-cask "devin-desktop"
 # Voice and text chat software
 cask "discord"
 # Drivers for DisplayLink docks, adapters and monitors

@@ -1,15 +1,14 @@
-tap "atlassian/acli"
-tap "c-bata/kube-prompt"
-tap "dart-lang/dart"
-tap "furtidev/pub"
-tap "gofireflyio/aiac"
-tap "heartexlabs/tap"
-tap "humansignal/tap"
-tap "jenkins-x/jx"
-tap "lucagrulla/tap"
-tap "microsoft/git"
-tap "microsoft/mssql-release"
-tap "mongodb/brew"
-tap "oven-sh/bun"
-tap "warrensbox/tap"
-tap "zurawiki/brews"
+tap "atlassian/acli", trusted: true
+tap "c-bata/kube-prompt", trusted: true
+tap "dart-lang/dart", trusted: true
+tap "furtidev/pub", trusted: true
+tap "gofireflyio/aiac", trusted: true
+tap "humansignal/tap", trusted: true
+tap "jenkins-x/jx", trusted: true
+tap "lucagrulla/tap", trusted: true
+tap "microsoft/git", trusted: true
+tap "microsoft/mssql-release", trusted: true
+tap "mongodb/brew", trusted: true
+tap "oven-sh/bun", trusted: true
+tap "warrensbox/tap", trusted: true
+tap "zurawiki/brews", trusted: true
