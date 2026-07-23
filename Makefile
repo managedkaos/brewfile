@@ -13,13 +13,13 @@ check-uninstalled: ## Check Brewfile entries against uninstalled casks
 	./scripts/check-uninstalled.sh
 
 update: ## Update Homebrew package metadata
-	brew update
+	-brew update --yes
 
 upgrade: ## Upgrade installed Homebrew formulas
-	brew upgrade
+	-brew upgrade --yes
 
 casks: ## Upgrade installed Homebrew casks
-	brew upgrade --cask --greedy
+	-brew upgrade --cask --greedy --yes
 
 strata: ## Regenerate Brewfile category snapshots
 	brew bundle dump --force
@@ -48,13 +48,7 @@ prune-%: ## Prune unused Docker resources by type
 
 nocask: update upgrade ## Update Homebrew and upgrade formulas without casks
 
-all: ## Run full Homebrew maintenance
-	brew update
-	$(MAKE) check-uninstalled
-	$(MAKE) outdated
-	-$(MAKE) upgrade
-	$(MAKE) casks
-	$(MAKE) strata
+all: update check-uninstalled outdated upgrade casks strata ## Run full Homebrew maintenance
 	brew link --overwrite node
 	tldr --update
 	-brew cleanup
