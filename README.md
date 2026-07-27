@@ -35,16 +35,17 @@ make all
 
 | Target | Description |
 | --- | --- |
-| `help` | Display this help message |
+| `help` | Display available targets |
 | `outdated` | List outdated Homebrew formulas and casks |
+| `descriptions` | List packages with their Brewfile descriptions |
 | `check-uninstalled` | Check Brewfile entries against uninstalled casks |
 | `update` | Update Homebrew package metadata |
 | `upgrade` | Upgrade installed Homebrew formulas |
 | `casks` | Upgrade installed Homebrew casks |
 | `strata` | Regenerate Brewfile category snapshots |
-| `backups` | Back up local profiles, packages, dotfiles, chats, and files |
+| `backups` | Back up profiles, packages, dotfiles, chats, and files |
 | `npm` | Update global npm packages |
-| `prune` | Prune unused Docker images, containers, networks, and volumes |
+| `prune` | Prune all unused Docker resources |
 | `prune-%` | Prune unused Docker resources by type |
 | `nocask` | Update Homebrew and upgrade formulas without casks |
 | `all` | Run full Homebrew maintenance |
