@@ -256,8 +256,6 @@ brew "midnight-commander"
 brew "miller"
 # Wrapper for auto-detecting build and test commands in a repository
 brew "mk"
-# Text-based mp3 player
-brew "mp3blaster"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
@@ -358,6 +356,8 @@ brew "siege"
 brew "soft-serve"
 # Ruby language server
 brew "solargraph"
+# Sound eXchange NG
+brew "sox_ng"
 # Data wrangler with jq-like query language
 brew "sq"
 # Cross-shell prompt for astronauts
@@ -478,8 +478,6 @@ cask "displaylink"
 cask "duckduckgo"
 # Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
-# Free/open-source Bible study application, based on the SWORD Project
-cask "eloquent"
 # Web browser
 cask "firefox"
 # Privacy-focused Firefox-based browser
@@ -489,8 +487,6 @@ cask "font-hack-nerd-font"
 cask "free-podcast-transcription"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Displays all your GitLab activities in one place
-cask "gitdock"
 # Desktop client for GitHub repositories
 cask "github@beta"
 # Web browser
@@ -515,8 +511,6 @@ cask "loom"
 cask "losslesscut"
 # Text editor
 cask "macvim-app"
-# Minimal browser that protects privacy
-cask "min"
 # CSV editor
 cask "modern-csv"
 # Knowledge base that works on top of a local folder of plain text Markdown files

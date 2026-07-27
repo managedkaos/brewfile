@@ -13,13 +13,13 @@ check-uninstalled: ## Check Brewfile entries against uninstalled casks
 	./scripts/check-uninstalled.sh
 
 update: ## Update Homebrew package metadata
-	-brew update --yes
+	brew update
 
 upgrade: ## Upgrade installed Homebrew formulas
-	-brew upgrade --yes
+	brew upgrade --yes
 
 casks: ## Upgrade installed Homebrew casks
-	-brew upgrade --cask --greedy --yes
+	brew upgrade --cask --greedy --yes
 
 strata: ## Regenerate Brewfile category snapshots
 	brew bundle dump --force
