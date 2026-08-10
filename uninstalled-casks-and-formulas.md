@@ -1,14 +1,17 @@
 # Uninstalled Casks
-```
+
+```bash
 brew "1bartender"
 brew "gettext"
 brew "rubberband"
 brew "typora"
 brew "w3m"
 brew "xwmx/taps/nb"
+brew "terraformer"
 cask "amazon-workspaces"
 cask "anaconda"
 cask "apache-directory-studio"
+cask "arc"
 cask "aws-vault"
 cask "azure-data-studio"
 cask "blisk"
@@ -32,11 +35,13 @@ cask "multipass"
 cask "obs"
 cask "overdrive-media-console"
 cask "robo-3t"
+cask "seamonkey"
 cask "spyder-py2"
 cask "tor-browser"
 cask "vagrant"
 cask "vagrant-manager"
 cask "virtualbox"
 cask "vnc-viewer"
+cask "warp"
 cask "workspaces"
 ```

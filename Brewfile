@@ -20,6 +20,8 @@ brew "act"
 brew "shellcheck"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # OpenType text shaping engine
 brew "harfbuzz"
 # General-purpose data compression with high compression ratio
@@ -70,8 +72,6 @@ brew "gcc"
 brew "bzt"
 # Validate CloudFormation templates against the CloudFormation spec
 brew "cfn-lint"
-# Create and view interactive cheat sheets for *nix commands
-brew "cheat"
 # Linter/analyzer for Makefiles
 brew "checkmake"
 # Control Google Chrome from the command-line
@@ -337,7 +337,7 @@ brew "rename"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Extremely fast Python linter, written in Rust
-brew "ruff", link: false
+brew "ruff"
 # Rust toolchain installer
 brew "rustup"
 # Build tool for Scala projects
@@ -370,8 +370,6 @@ brew "syft"
 brew "telnet"
 # Tool to generate documentation from Terraform modules
 brew "terraform-docs"
-# CLI tool to generate terraform files from existing infrastructure
-brew "terraformer"
 # Linter for Terraform files
 brew "tflint"
 # Code-search similar to ack
@@ -444,8 +442,6 @@ cask "android-file-transfer"
 cask "ankerwork"
 # Agent orchestration platform
 cask "antigravity"
-# Chromium based browser
-cask "arc"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
@@ -480,15 +476,21 @@ cask "duckduckgo"
 cask "elgato-stream-deck"
 # Web browser
 cask "firefox"
+# Web browser
+cask "firefox@developer-edition"
 # Privacy-focused Firefox-based browser
 cask "floorp"
 cask "font-hack-nerd-font"
 # Transcribe Your Podcast
 cask "free-podcast-transcription"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Desktop client for GitHub repositories
 cask "github@beta"
+# Web browser
+cask "google-chrome"
 # Web browser
 cask "google-chrome@canary"
 # Dedicated scratchpad for developers
@@ -499,6 +501,10 @@ cask "inkscape"
 cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
+# Agent-centric IDE with spec-driven development
+cask "kiro"
+# AI-powered productivity tool for the command-line
+cask "kiro-cli"
 # Free cross-platform office suite, fresh version
 cask "libreoffice"
 # Provides access to camera controls
@@ -529,8 +535,8 @@ cask "podman-desktop"
 cask "postman"
 # Window snapping tool
 cask "rectangle-pro"
-# Development of SeaMonkey Internet Application Suite
-cask "seamonkey"
+# Screen recorder with audio
+cask "screenflick"
 # MySQL/MariaDB database management
 cask "sequel-ace"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
@@ -559,8 +565,6 @@ cask "vivaldi"
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
-# Rust-based terminal
-cask "warp"
 # Web browser
 cask "waterfox"
 # Terminal emulator
@@ -569,6 +573,8 @@ cask "wave"
 cask "webex"
 # Multiplayer code editor
 cask "zed"
+# Gecko based web browser
+cask "zen"
 # Open-source markdown editor
 cask "zettlr"
 vscode "amazonwebservices.amazon-q-vscode"
@@ -594,6 +600,7 @@ go "honnef.co/go/tools/cmd/staticcheck"
 go "github.com/go-swagger/go-swagger/cmd/swagger"
 go "github.com/RoseSecurity/terramaid"
 uv "ruff"
+uv "snowflake-cli"
 uv "uv-virtualenvwrapper"
 krew "viewnode"
 npm "@forge/cli"
