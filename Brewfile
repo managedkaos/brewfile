@@ -6,6 +6,7 @@ tap "gofireflyio/aiac", trusted: true
 tap "humansignal/tap", trusted: true
 tap "jenkins-x/jx", trusted: true
 tap "lucagrulla/tap", trusted: true
+tap "manaflow-ai/cmux", trusted: { casks: ["cmux"] }
 tap "microsoft/git", trusted: true
 tap "microsoft/mssql-release", trusted: true
 tap "mongodb/brew", trusted: true
@@ -285,7 +286,7 @@ brew "nvm"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
 # Development kit for the Java programming language
-brew "openjdk@21"
+brew "openjdk@21", link: true
 # Terminal client for Ollama
 brew "oterm"
 # Shell command parallelization utility
@@ -402,6 +403,8 @@ brew "wget2"
 brew "wp-cli"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
+# Linter for YAML files
+brew "yamllint"
 # JavaScript package manager
 brew "yarn"
 # Bash completion for Yarn
@@ -454,6 +457,8 @@ cask "brave-browser"
 # Budgeting tool
 cask "buckets"
 cask "canon-eos-webcam-utility"
+# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
+cask "cmux"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Brings the power of Copilot coding agent directly to your terminal
@@ -571,6 +576,8 @@ cask "waterfox"
 cask "wave"
 # Video communication and virtual meeting platform
 cask "webex"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Multiplayer code editor
 cask "zed"
 # Gecko based web browser

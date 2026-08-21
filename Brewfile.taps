@@ -6,6 +6,7 @@ tap "gofireflyio/aiac", trusted: true
 tap "humansignal/tap", trusted: true
 tap "jenkins-x/jx", trusted: true
 tap "lucagrulla/tap", trusted: true
+tap "manaflow-ai/cmux", trusted: { casks: ["cmux"] }
 tap "microsoft/git", trusted: true
 tap "microsoft/mssql-release", trusted: true
 tap "mongodb/brew", trusted: true
