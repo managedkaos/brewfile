@@ -1,5 +1,5 @@
 help: ## Display available targets
-	@awk 'BEGIN {FS = ":.*## "}; /^[a-zA-Z0-9_%-]+:.*## / {printf "\033[36m%-28s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN {FS = ":.*## "}; /^[a-zA-Z0-9_-]+:.*## / {printf "\033[36m%-28s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 outdated: ## List outdated Homebrew formulas and casks
 	@echo "Outdated formulas and casks:"
@@ -14,6 +14,14 @@ descriptions: ## List packages with their Brewfile descriptions
 
 check-uninstalled: ## Check Brewfile entries against uninstalled casks
 	./scripts/check-uninstalled.sh
+
+check-secrets: ## Scan files and Git history for secrets
+	@command -v gitleaks >/dev/null || { echo "gitleaks is required" >&2; exit 1; }
+	@command -v trufflehog >/dev/null || { echo "trufflehog is required" >&2; exit 1; }
+	gitleaks detect --source . --no-git --redact --no-banner
+	gitleaks detect --source . --redact --no-banner
+	trufflehog filesystem . --no-verification --no-update --fail --fail-on-scan-errors
+	trufflehog git "file://$(CURDIR)" --no-verification --no-update --fail --fail-on-scan-errors
 
 update: ## Update Homebrew package metadata
 	brew update
@@ -57,4 +65,4 @@ all: update check-uninstalled outdated upgrade casks strata ## Run full Homebrew
 	-brew cleanup
 	-brew doctor
 
-.PHONY: help descriptions outdated check-uninstalled update upgrade casks strata backups npm prune nocask all
+.PHONY: help descriptions outdated check-uninstalled check-secrets update upgrade casks strata backups npm prune nocask all
