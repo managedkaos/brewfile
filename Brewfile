@@ -439,14 +439,16 @@ brew "oven-sh/bun/bun"
 brew "warrensbox/tap/tfswitch"
 # Git prepare-commit-msg hook for authoring commit messages with GPT-3
 brew "zurawiki/brews/gptcommit"
-# Slideshow maker
-cask "4k-slideshow-maker"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Webcam & audio device software
 cask "ankerwork"
 # Agent orchestration platform
 cask "antigravity"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
+# AI Coding Agent IDE
+cask "antigravity-ide"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
@@ -456,8 +458,6 @@ cask "bbedit"
 cask "brackets"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Budgeting tool
-cask "buckets"
 cask "canon-eos-webcam-utility"
 # Ghostty-based terminal with vertical tabs and notifications for AI coding agents
 cask "cmux"
@@ -502,6 +502,8 @@ cask "google-chrome"
 cask "google-chrome@canary"
 # Dedicated scratchpad for developers
 cask "heynote"
+# Convert your caps lock key or any of your modifier keys to the hyper key
+cask "hyperkey"
 # Vector graphics editor
 cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -613,7 +615,6 @@ uv "snowflake-cli"
 uv "uv-virtualenvwrapper"
 krew "viewnode"
 npm "@forge/cli"
-npm "@google/gemini-cli"
 npm "firebase-tools"
 npm "generator-bitbucket-pipe"
 npm "json-server"
