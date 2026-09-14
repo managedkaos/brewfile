@@ -381,6 +381,8 @@ brew "tlrc"
 brew "tmux"
 # CLI tool that moves files or folder to the trash
 brew "trash", link: true
+# Find and verify credentials
+brew "trufflehog"
 # CLI time zone visualizer
 brew "tz"
 # Extremely fast Python package installer and resolver, written in Rust

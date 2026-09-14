@@ -24,13 +24,13 @@ check-secrets: ## Scan files and Git history for secrets
 	trufflehog git "file://$(CURDIR)" --no-verification --no-update --fail --fail-on-scan-errors
 
 update: ## Update Homebrew package metadata
-	brew update
+	-brew update
 
 upgrade: ## Upgrade installed Homebrew formulas
-	brew upgrade --yes
+	-brew upgrade --yes
 
 casks: ## Upgrade installed Homebrew casks
-	brew upgrade --cask --greedy --yes
+	-brew upgrade --cask --greedy --yes
 
 strata: ## Regenerate Brewfile category snapshots
 	brew bundle dump --force

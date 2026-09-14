@@ -186,6 +186,7 @@ brew "tlrc"
 brew "tmux"
 brew "trash", link: true
 brew "tree"
+brew "trufflehog"
 brew "tz"
 brew "uv"
 brew "vhs"
