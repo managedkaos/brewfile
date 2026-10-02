@@ -45,8 +45,6 @@ brew "autoconf"
 brew "automake"
 # YAML Parser
 brew "libyaml"
-# Library for command-line editing
-brew "readline"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
 # CLI tool for drawing AWS architecture
@@ -133,8 +131,6 @@ brew "ffmpeg"
 brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Lint your Python code for style and logical errors
 brew "flake8"
 # Libpcap-based NetFlow probe
@@ -181,6 +177,8 @@ brew "gokey"
 brew "golangci-lint"
 # Command-line Golang template processor
 brew "gomplate"
+# Deliver Go binaries as fast and easily as possible
+brew "goreleaser"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU troff text-formatting system
@@ -195,6 +193,8 @@ brew "grype"
 brew "pkgconf"
 # Kubernetes package manager
 brew "helm"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # HTML validator written in Go
 brew "htmltest"
 # Improved top (interactive process viewer)
@@ -307,6 +307,8 @@ brew "podman"
 brew "podman-tui"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
 # Monitor data's progress through a pipe
 brew "pv"
 # Python version management
@@ -329,6 +331,8 @@ brew "python@3.10"
 brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Command-line tool for working with AWS CloudFormation
 brew "rain"
 # Rakudo compiler and commonly used packages
@@ -373,6 +377,8 @@ brew "telnet"
 brew "terraform-docs"
 # Linter for Terraform files
 brew "tflint"
+# Command-line tool to switch between Terraform versions
+brew "tfswitch"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Official tldr client written in Rust
@@ -435,8 +441,6 @@ brew "gofireflyio/aiac/aiac"
 brew "lucagrulla/tap/cw"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
-# The tfswitch command lets you switch between terraform versions.
-brew "warrensbox/tap/tfswitch"
 # Git prepare-commit-msg hook for authoring commit messages with GPT-3
 brew "zurawiki/brews/gptcommit"
 # Transfer files from and to an Android smartphone
@@ -459,6 +463,8 @@ cask "brackets"
 # Web browser focusing on privacy
 cask "brave-browser"
 cask "canon-eos-webcam-utility"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Ghostty-based terminal with vertical tabs and notifications for AI coding agents
 cask "cmux"
 # OpenAI's coding agent that runs in your terminal
