@@ -59,7 +59,10 @@ prune-%: ## Prune unused Docker resources by type
 
 nocask: update upgrade ## Update Homebrew and upgrade formulas without casks
 
-all: update check-uninstalled outdated upgrade casks strata ## Run full Homebrew maintenance
+atuin-sync:
+	atuin sync
+
+all: update check-uninstalled outdated upgrade casks strata atuin-sync ## Run full Homebrew maintenance
 	brew link --overwrite node
 	tldr --update
 	-brew cleanup

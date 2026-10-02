@@ -369,8 +369,12 @@ brew "sq"
 brew "starship"
 # Stress test a computer system in various selectable ways
 brew "stress-ng"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # CLI for generating a Software Bill of Materials from container images
 brew "syft"
+# General purpose fuzzy finder TUI
+brew "television"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to generate documentation from Terraform modules
@@ -389,6 +393,8 @@ brew "tmux"
 brew "trash", link: true
 # Find and verify credentials
 brew "trufflehog"
+# Terminal UI OS (Terminal Multiplexer)
+brew "tuios"
 # CLI time zone visualizer
 brew "tz"
 # Extremely fast Python package installer and resolver, written in Rust
