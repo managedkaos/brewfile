@@ -7,6 +7,7 @@ tap "humansignal/tap", trusted: true
 tap "jenkins-x/jx", trusted: true
 tap "lucagrulla/tap", trusted: true
 tap "manaflow-ai/cmux", trusted: { casks: ["cmux"] }
+tap "managedkaos/tap"
 tap "microsoft/git", trusted: true
 tap "microsoft/mssql-release", trusted: true
 tap "mongodb/brew", trusted: true
@@ -31,8 +32,6 @@ brew "xz"
 brew "ant"
 # Mozilla CA certificate store
 brew "ca-certificates"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Record and share terminal sessions
 brew "asciinema"
 # Spell checker with better logic than ispell
@@ -57,6 +56,8 @@ brew "bash-completion@2"
 brew "bash-git-prompt"
 # Preexec and precmd functions for Bash (like Zsh)
 brew "bash-preexec"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Bash Automated Testing System
@@ -445,6 +446,10 @@ brew "furtidev/pub/srt-linter"
 brew "gofireflyio/aiac/aiac"
 # The best way to tail AWS Cloudwatch Logs from your terminal
 brew "lucagrulla/tap/cw"
+# Store, retrieve, and search markdown-formatted reference files
+brew "managedkaos/tap/recall", trusted: true
+# Rename files and directories to replace problematic characters, with undo
+brew "managedkaos/tap/rehab", trusted: true
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # Git prepare-commit-msg hook for authoring commit messages with GPT-3
@@ -469,6 +474,8 @@ cask "brackets"
 # Web browser focusing on privacy
 cask "brave-browser"
 cask "canon-eos-webcam-utility"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Ghostty-based terminal with vertical tabs and notifications for AI coding agents

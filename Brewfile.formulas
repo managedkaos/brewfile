@@ -113,6 +113,8 @@ brew "lsd"
 brew "lucagrulla/tap/cw"
 brew "lynx"
 brew "make"
+brew "managedkaos/tap/recall", trusted: true
+brew "managedkaos/tap/rehab", trusted: true
 brew "maven"
 brew "midnight-commander"
 brew "miller"
