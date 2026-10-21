@@ -160,6 +160,8 @@ brew "git-lfs"
 brew "gitoxide"
 # TUI Git client inspired by Magit
 brew "gitu"
+# Open-source GitLab command-line tool
+brew "glab"
 # Render markdown on the CLI
 brew "glow"
 # GNU implementation of the famous stream editor
@@ -374,6 +376,8 @@ brew "stress-ng"
 brew "superfile"
 # CLI for generating a Software Bill of Materials from container images
 brew "syft"
+# Command-line tool to interact with Gitea servers
+brew "tea"
 # General purpose fuzzy finder TUI
 brew "television"
 # User interface to the TELNET protocol
@@ -500,6 +504,8 @@ cask "displaylink"
 cask "duckduckgo"
 # Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
+# Utility for customizing which browser to start
+cask "finicky"
 # Web browser
 cask "firefox"
 # Web browser
